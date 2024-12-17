@@ -3,9 +3,15 @@ import cors  from 'cors'
 import dotenv  from 'dotenv'
 import mongoose  from 'mongoose'
 import path  from 'path'
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
 dotenv.config()
 const app = express()
+
+// Simulating __dirname for ES Modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 //Middleware
 app.use(cors())
