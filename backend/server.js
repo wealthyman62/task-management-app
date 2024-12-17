@@ -1,8 +1,8 @@
-const express = require('express')
-const cors = require('cors')
-const dotenv = require('dotenv')
-const mongoose = require('mongoose')
-const path = require('path')
+import express  from 'express'
+import cors  from 'cors'
+import dotenv  from 'dotenv'
+import mongoose  from 'mongoose'
+import path  from 'path'
 
 dotenv.config()
 const app = express()
